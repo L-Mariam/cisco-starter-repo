@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+function Header() {
+ return  <h2 className='header'> Sextant</h2>;
+}
+
+function Cards(){
+  return(
+    <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  );
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <Header/>
+      <div className='Body'>
+        <h2 className='Subheader'> This is your dashboard! </h2>
+      <Cards/>
+      </div>
       </div>
     );
   }
